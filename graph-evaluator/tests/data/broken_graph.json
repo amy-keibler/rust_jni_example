@@ -1,0 +1,22 @@
+{
+    "name": "broken_graph",
+    "entry_point": "entry",
+    "nodes": {
+        "entry": {
+            "type": "standard",
+            "calculation": {
+                "operation": "<",
+                "field": "number_of_bad_things",
+                "value": 10
+            },
+            "next": {
+                "true": "nonexistent_node",
+                "false": "end_node"
+            }
+        },
+        "end_node": {
+            "type": "output",
+            "output": "The bad things were above the acceptable threshold. Now would be a good time to panic."
+        }
+    }
+}

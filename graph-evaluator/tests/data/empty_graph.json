@@ -1,0 +1,5 @@
+{
+    "name": "empty_graph",
+    "entry_point": "nonexistent_entry",
+    "nodes": {}
+}

@@ -1,0 +1,20 @@
+{
+    "name": "missing_edges_graph",
+    "entry_point": "entry",
+    "nodes": {
+        "entry": {
+            "type": "standard",
+            "calculation": {
+                "operation": "<",
+                "field": "number_of_bad_things",
+                "value": 10
+            },
+            "next": {
+            }
+        },
+        "end_node": {
+            "type": "output",
+            "output": "The bad things were above the acceptable threshold. Now would be a good time to panic."
+        }
+    }
+}

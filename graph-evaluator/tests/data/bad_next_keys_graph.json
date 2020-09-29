@@ -1,0 +1,26 @@
+{
+    "name": "bad_next_keys_graph",
+    "entry_point": "entry",
+    "nodes": {
+        "entry": {
+            "type": "standard",
+            "calculation": {
+                "operation": "<",
+                "field": "number_of_bad_things",
+                "value": 10
+            },
+            "next": {
+                "TRUE": "true_node",
+                "FALSE": "false_node"
+            }
+        },
+        "true_node": {
+            "type": "output",
+            "output": "The bad things were below the acceptable threshold."
+        },
+        "false_node": {
+            "type": "output",
+            "output": "The bad things were above the acceptable threshold. Now would be a good time to panic."
+        }
+    }
+}
